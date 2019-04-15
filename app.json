@@ -1,0 +1,28 @@
+
+{
+  "name": "literator.ai",
+  "description": "",
+  "repository": "https://github.com/literatorAI/literator.ai",
+  "logo": "",
+  "keywords": ["ai", "nlp"],
+  "env": {
+    "FLASK_ENV": {
+      "description": "Flask Enviroment",
+      "value": "production"
+    },
+    "SECRET": {
+      "description": "Flask Secret Key",
+      "value": "YourKeyHere"
+    }
+   },
+  "addons": [
+   ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
