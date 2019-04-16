@@ -6,28 +6,32 @@ import config from './config'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
+import mavonEditor from 'mavon-editor'
+import 'mavon-editor/dist/css/index.css'
+
 import './filters'
 
-var _hmt = _hmt || [];
+var _hmt = _hmt || []
 window._hmt = _hmt; // 必须把_hmt挂载到window下，否则找不到
- (function () {
-       var hm = document.createElement("script");
-       hm.src = "https://hm.baidu.com/hm.js?"+ config.baidu_key;
-       var s = document.getElementsByTagName("script")[0];
-       s.parentNode.insertBefore(hm, s);
-  })();
+(function () {
+  var hm = document.createElement('script')
+  hm.src = 'https://hm.baidu.com/hm.js?' + config.baidu_key
+  var s = document.getElementsByTagName('script')[0]
+  s.parentNode.insertBefore(hm, s)
+})()
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
+Vue.use(mavonEditor)
 
 router.beforeEach((to, from, next) => {
-    if (_hmt) {
-        if (to.path) {
-            _hmt.push(['_trackPageview', '/#' + to.fullPath]);
-        }
+  if (_hmt) {
+    if (to.path) {
+      _hmt.push(['_trackPageview', '/#' + to.fullPath])
     }
-    next();
-});
+  }
+  next()
+})
 
 new Vue({
   router,
