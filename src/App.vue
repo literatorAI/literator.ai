@@ -10,7 +10,7 @@
                 <!-- FORK Me -->
                 <a href="https://github.com/literatorAI/literator.ai"><img
                         style="position: absolute; top: 0; right: 0; border: 0;z-index: 100000"
-                        src="/forkme_right_orange_ff7600.png"
+                        src="@/assets/forkme_right_orange_ff7600.png"
                         alt="Fork me on GitHub"></a>
             </el-header>
             <el-main>
