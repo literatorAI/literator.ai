@@ -6,6 +6,7 @@
                 <div id="nav">
                     <router-link to="/">Home</router-link> |
                     <router-link to="/couplet">Couplet</router-link>
+                    <router-link to="/poem">Couplet</router-link>
                 </div>
                 <!-- FORK Me -->
                 <a href="https://github.com/literatorAI/literator.ai"><img
